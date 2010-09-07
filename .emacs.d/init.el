@@ -1,4 +1,10 @@
 ;;----------------------------
+;; Keep the (machine-generated) custom stuff separate.
+(setq custom-file "~/.emacs.d/custom.el")
+(load custom-file)
+
+
+;;----------------------------
 ;; set up the load path
 (setq load-path 
       (append load-path 
@@ -77,20 +83,5 @@
       (append '(("\\.php$"   . php-mode))
               auto-mode-alist))
 
+;; the end.
 
-;; the end of hand-rolled stuff, Custom-foo, follows.
-
-
-;; CUSTOM
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(indent-tabs-mode nil))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
