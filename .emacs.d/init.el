@@ -1,6 +1,6 @@
 ;;----------------------------
-;; Keep the (machine-generated) custom stuff separate.
-(setq custom-file "~/.emacs.d/custom.el")
+;; Keep the machine-generated custom initializations separate.
+(setq custom-file "~/.emacs.d/customized.el")
 (load custom-file)
 
 
@@ -37,6 +37,10 @@
 ;;------------------------------
 ;; Additional Packages
 ;; (always)
+;;uniquify
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'post-forward
+      uniquify-separator ":")
 ;;org-mode
 (setq org-startup-folded "showall")
 (setq org-todo-keywords 
