@@ -48,9 +48,9 @@
 ;;diary and appt 
 (setq diary-file "~/.emacs.d/diary")
 ;; note that appt requires (display-time) to work
-(add-hook 'diary-hook 'appt-make-list)
+(appt-activate)
 (setq appt-audible nil)
-(setq appt-msg-window nil)
+(setq appt-display-format nil)
 (diary 7)
 ;; (sometimes)
 ;;php-mode
